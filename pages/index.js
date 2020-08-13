@@ -45,8 +45,8 @@ export default function Home() {
         }
 
         marquee {
-          color: #fff;
-          font-size: 5rem;
+          color: #ffca62;
+          font-size: 6rem;
           font-weight: bold;
           margin: 24px 0;
         }
@@ -61,13 +61,17 @@ export default function Home() {
       `}</style>
 
       <style jsx global>{`
+        @font-face {
+          font-family: myFirstFont;
+          src: url(/SeaweedScript-Regular.ttf);
+        }
         html,
         body {
           padding: 0;
           margin: 0 !important;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+          font-family: myFirstFont, -apple-system, BlinkMacSystemFont, Segoe UI,
+            Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+            Helvetica Neue, sans-serif;
         }
 
         * {
