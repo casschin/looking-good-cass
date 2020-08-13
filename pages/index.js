@@ -1,5 +1,15 @@
 import Head from "next/head";
 
+const VIDEO_IDS = [
+  "aapeTWpUsfw",
+  "VTdnGrbczYg",
+  "q2tEZN93gvo",
+  "RDq2tEZN93gvo",
+  "y8pryE95mAIZ",
+  "I-ZXdXTiiGI",
+  "_3d6-3BjY0g",
+];
+
 export default function Home() {
   return (
     <div className="container">
@@ -10,6 +20,16 @@ export default function Home() {
       </Head>
 
       <main>
+        <iframe
+          width="560"
+          height="315"
+          src={`https://www.youtube.com/embed/${
+            VIDEO_IDS[Math.floor(Math.random() * VIDEO_IDS.length)]
+          }?autoplay=1`}
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
         <div>
           <marquee className="title">Looking good, Cass!</marquee>
         </div>
@@ -29,6 +49,10 @@ export default function Home() {
           font-size: 5rem;
           font-weight: bold;
           margin: 24px 0;
+        }
+
+        iframe {
+          visibility: hidden;
         }
 
         main {
