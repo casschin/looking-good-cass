@@ -16,7 +16,7 @@ export default function Home() {
       <Head>
         <title>Looking good, Cass!</title>
         <meta property="og:title" content="Looking good, Cass!" />
-        <meta property="og:image" content="/looking-good-cass.gif" />
+        <meta property="og:image" content="/feeling-good-cass-small.gif" />
       </Head>
 
       <main>
