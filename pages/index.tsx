@@ -41,7 +41,7 @@ const Home: NextPage = () => {
           )}
         </div>
         <div>
-          <marquee className="title">Looking good, Cass!</marquee>
+          <h1 className="title marquee">Looking good, Cass!</h1>
         </div>
       </main>
 
@@ -58,13 +58,29 @@ const Home: NextPage = () => {
           overflow: hidden;
         }
 
-        marquee {
+        .title {
           color: #ffca62;
           font-size: 6rem;
           font-weight: bold;
           margin: 24px 0;
           position: relative;
           z-index: 2;
+          white-space: nowrap;
+        }
+
+        .marquee {
+          overflow: hidden;
+          position: relative;
+          animation: marquee 30s linear infinite;
+        }
+
+        @keyframes marquee {
+          0% {
+            left: 100%;
+          }
+          100% {
+            left: -100%;
+          }
         }
 
         .video-container {
