@@ -60,18 +60,18 @@ const Home: NextPage = () => {
 
         .title {
           color: #ffca62;
-          font-size: 6rem;
+          font-size: 5rem;
           font-weight: bold;
-          margin: 24px 0;
+          padding: 16px;
           position: relative;
           z-index: 2;
-          white-space: nowrap;
+          text-align: center;
         }
 
         .marquee {
           overflow: hidden;
           position: relative;
-          animation: marquee 30s linear infinite;
+          animation: marquee 15s linear infinite;
         }
 
         @keyframes marquee {
